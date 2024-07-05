@@ -5,7 +5,14 @@
     scroll-behavior: smooth;
 }
 .table{
-    width: 60%;
+    width: 30%;
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px ;
     border: 2px solid red;
+}
+input{
+    border: 1px solid black;
 }
