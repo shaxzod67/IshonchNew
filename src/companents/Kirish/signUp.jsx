@@ -29,7 +29,7 @@ export function Signup() {
         <div  >
             
             <section className=  "text-gray-400 w-[100%] h-[100vh] bg-gray-900 body-font">
-            <button>
+            <button className="knopka">
                 <Link to="/">
                   <FaChevronLeft />
                 </Link>

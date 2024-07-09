@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body{
+    background-color: rgb(17 24 39);
+}
 .table{
     width: 30%;
     height: 400px;

@@ -16,7 +16,7 @@ const Royhat = () => {
 
   return (
     <div>
-      <button>
+      <button className='knopka'>
                 <Link to="/">
                   <FaChevronLeft />
                 </Link>

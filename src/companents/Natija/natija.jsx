@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 export const Natija = () => {
   return (
     <div>
-      <button>
+      <button className="knopka">
         <Link to="/">
           <FaChevronLeft />
         </Link>
