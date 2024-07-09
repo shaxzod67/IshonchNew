@@ -3,13 +3,9 @@ import { Link, NavLink, Route, Routes, useNavigate } from 'react-router-dom';
 import { FaUserPlus, FaRegUserCircle } from 'react-icons/fa';
 import { BiExit } from 'react-icons/bi';
 import ishonchpng from '../../img/Ishonch.png';
-import { Natija } from '../Natija/natija';
-import { Signup } from '../Kirish/signUp';
-import { Login } from '../Kirish/signIn';
 import { auth } from '../../firebase';
 import { signOut } from 'firebase/auth';
 import { AuthContext } from '../../contex/AuthContext';
-import Royhat from '../Royhat/Royhat'
 const Header = () => {
     const navigate = useNavigate();
     const { dispatch } = useContext(AuthContext);
@@ -73,7 +69,7 @@ const Header = () => {
                         </h1>
                         <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
                         <div className="flex justify-center">
-                            <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><Link target='_blank' to="/royhat">Ro'yhatdan o'tish</Link></button>
+                            <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><Link to="/royhat">Ro'yhatdan o'tish</Link></button>
                         </div>
                     </div>
                 </div>

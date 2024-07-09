@@ -9,13 +9,18 @@ body{
 }
 .table{
     width: 30%;
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px ;
-    border: 2px solid red;
+    padding: 10px;
+    border: 2px solid gray;
 }
 input{
-    border: 1px solid black;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border-bottom: 1px solid white;
 }
