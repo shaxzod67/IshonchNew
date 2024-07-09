@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import './royhat.css'
+import { FaChevronLeft } from 'react-icons/fa';
 
 
 const Royhat = () => {
@@ -14,6 +16,11 @@ const Royhat = () => {
 
   return (
     <div>
+      <button>
+                <Link to="/">
+                  <FaChevronLeft />
+                </Link>
+              </button>
         <form method="post" autoComplete="off" name="google-sheet" onSubmit={handleSubmit}>
       <center><br /><br />
         <h1 >Registration Form</h1><br />

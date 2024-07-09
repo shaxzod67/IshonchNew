@@ -21,7 +21,7 @@ function App() {
         <Route path="/natija" element={<RequiredAuth><Natija /></RequiredAuth>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Login />} />
-        <Route element={<Royhat />} path="/royhat" />
+        <Route  path="/royhat" element={ <RequiredAuth><Royhat /></RequiredAuth>}/>
       </Routes>
     </>
   );

@@ -4,6 +4,7 @@ import {createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from "../../firebase";
 import { AuthContext } from "../../contex/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { FaChevronLeft } from "react-icons/fa";
 
 export function Signup() {
     const [email, setEmail] = useState('');
@@ -28,6 +29,11 @@ export function Signup() {
         <div  >
             
             <section className=  "text-gray-400 w-[100%] h-[100vh] bg-gray-900 body-font">
+            <button>
+                <Link to="/">
+                  <FaChevronLeft />
+                </Link>
+              </button>
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-12">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Ro'yhatdan o'tish</h1>
