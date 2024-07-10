@@ -18,17 +18,15 @@ const Royhat = () => {
     setTelfon('');
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => notification.success({message:"Malumot jo'natildi"}))
+      .then(response => notification.success({ message: "Malumot jo'natildi" }))
       .catch(error => console.error('Error!', error.message));
   }
 
   const handleClick = () => {
-
     notification.info({
       message: "Ko'rib chiqilyabdi",
       description: "Siz bilan tez orada bog'lanamiz"
     });
-
   }
 
   return (
@@ -81,21 +79,19 @@ const Royhat = () => {
               </tr>
               <tr className='fan'>
                 <td><b>Fan: </b></td>
-                <td className='fanTD'> <br />
-                  <input type="radio" name="Fan" value="Kimyo" />Kimyo
-                  <input type="radio" name="Fan" value="Biologiya" />Biologiya
-                  <input type="radio" name="Fan" value="Matematika" />Matematika
-                  <input type="radio" name="Fan" value="Tarix" />Tarix
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button onClick={handleClick} className='fanButton' type="submit" name="submit" value="Submit">
-                    Yuborish
-                  </button>
+                <td className='fanTD'>
+                  <input type="radio" name="Fan" value="Kimyo" /><span>Kimyo</span>
+                  <input type="radio" name="Fan" value="Biologiya" /><span>Biologiya</span>
+                  <input type="radio" name="Fan" value="Matematika" /><span>Matematika</span>
+                  <input required type="radio" name="Fan" value="Tarix" /><span>Tarix</span>
                 </td>
               </tr>
             </tbody>
+          <div className='fanBtn'>
+            <button onClick={handleClick} className='fanButton' type="submit" name="submit" value="Submit">
+              Yuborish
+            </button>
+          </div>
           </table>
         </center>
       </form>
