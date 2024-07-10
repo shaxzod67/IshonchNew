@@ -18,14 +18,14 @@ const Royhat = () => {
     setTelfon('');
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => alert("You have successfully submitted."))
+      .then(response => notification.success({message:"Malumot jo'natildi"}))
       .catch(error => console.error('Error!', error.message));
   }
 
   const handleClick = () => {
 
-    notification.success({
-      message: "Yuborildi",
+    notification.info({
+      message: "Ko'rib chiqilyabdi",
       description: "Siz bilan tez orada bog'lanamiz"
     });
 
