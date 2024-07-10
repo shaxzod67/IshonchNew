@@ -7,6 +7,7 @@ import { Login } from './companents/Kirish/signIn';
 import { useContext } from 'react';
 import { AuthContext } from './contex/AuthContext';
 import Royhat from './companents/Royhat/Royhat';
+import { GuruhLLA } from './companents/Natija/guruhLLA';
 
 function App() {
   const { currentUser } = useContext(AuthContext)
@@ -21,6 +22,7 @@ function App() {
         <Route path="/natija" element={<RequiredAuth><Natija /></RequiredAuth>} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Login />} />
+        <Route path="/guruhLLA" element={<GuruhLLA />} />
         <Route  path="/royhat" element={ <RequiredAuth><Royhat /></RequiredAuth>}/>
       </Routes>
     </>

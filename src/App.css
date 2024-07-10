@@ -116,7 +116,17 @@
     padding: 8px;
     border-radius: 50%;
 }
-
+.natija{
+    width: 100%;
+    height: 100vh;
+    background: rgb(17 24 39);
+}
+.btn{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
 @media screen and (max-width: 400px) {
     .sign {
         width: 170px;
