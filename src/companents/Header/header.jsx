@@ -6,6 +6,7 @@ import ishonchpng from '../../img/Ishonch.png';
 import { auth } from '../../firebase';
 import { signOut } from 'firebase/auth';
 import { AuthContext } from '../../contex/AuthContext';
+import { notification } from 'antd';
 const Header = () => {
     const navigate = useNavigate();
     const { dispatch } = useContext(AuthContext);
@@ -21,6 +22,12 @@ const Header = () => {
                 console.error('Sign out error:', error);
             });
     };
+    const handleClick = () =>{
+        return notification.info({
+            message:"Kuting ",
+            description:"Bir necha soniya ichida natijalar ko'rinadi"
+        })
+    }
 
     return (
         <div>
@@ -46,7 +53,7 @@ const Header = () => {
                             </div>
                         ) : (
                             < div className='sign'>
-                                <button className="signin">
+                                <button onClick={handleClick} className="signin">
                                     <Link to="/natija">Natija</Link>
                                 </button>
                                 <button onClick={handleSignOut} className="signup">
