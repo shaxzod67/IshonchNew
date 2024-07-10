@@ -8,6 +8,12 @@ import { signOut } from 'firebase/auth';
 import { AuthContext } from '../../contex/AuthContext';
 import { notification } from 'antd';
 const Header = () => {
+    const handleClick = () => {
+        return notification.info({
+            message: "Kuting ",
+            description: "Bir necha soniya ichida natijalar ko'rinadi"
+        })
+    }
     const navigate = useNavigate();
     const { dispatch } = useContext(AuthContext);
     const token = localStorage.getItem('user');
@@ -22,12 +28,7 @@ const Header = () => {
                 console.error('Sign out error:', error);
             });
     };
-    const handleClick = () =>{
-        return notification.info({
-            message:"Kuting ",
-            description:"Bir necha soniya ichida natijalar ko'rinadi"
-        })
-    }
+
 
     return (
         <div>
