@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 export const Natija = () => {
   const items = [
-    { title: "Kimyo", group: "Guruh LLA 2", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLA 2", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLA 2", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLA 2", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLA 2", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLA 2", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLA 2", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLA 2", link: "/guruhLLA" },
+    { title: "Kimyo", group: "Guruh LLA 1", link: "/guruhLLA" },
+    { title: "Biologiya", group: "Guruh LLA 2", link: "/guruhLLA" },
+    { title: "Tarix", group: "Guruh LLA 3", link: "/guruhLLA" },
+    { title: "Matematika", group: "Guruh LLA 4", link: "/guruhLLA" },
+    { title: "Biologiya", group: "Guruh LLA 5", link: "/guruhLLA" },
+    { title: "Kimyo", group: "Guruh LLA 6", link: "/guruhLLA" },
+    { title: "Tarix", group: "Guruh LLA 7", link: "/guruhLLA" },
+    { title: "Matematika", group: "Guruh LLA 8", link: "/guruhLLA" },
   ];
 
   return (
