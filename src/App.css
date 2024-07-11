@@ -110,23 +110,26 @@
 
 .knopka {
     margin: 8px;
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;
     border: 1px solid white;
     padding: 8px;
     border-radius: 50%;
 }
-.natija{
-    width: 100%;
-    height: 100vh;
-    background: rgb(17 24 39);
-}
-.btn{
+
+.btn {
     width: 100%;
     align-items: center;
     justify-content: space-between;
     display: flex;
 }
+
+@media screen and (max-width: 920px) {
+    .knopka {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .sign {
         width: 170px;
