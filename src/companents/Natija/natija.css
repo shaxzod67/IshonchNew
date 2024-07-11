@@ -84,7 +84,6 @@ aside {
     padding: 0 10px;
     background-color: rgba(128, 128, 128, 0.125);
     backdrop-filter: blur(15px);
-
 }
 
 .section {
@@ -160,6 +159,7 @@ aside {
 @media screen and (max-width:420px) {
 
     aside {
+        padding: 50px 10px;
         width: 60%;
         background: rgba(128, 128, 128, 0.621);
 
@@ -168,5 +168,11 @@ aside {
     aside .category {
         background: transparent;
     }
-
+    .category {
+        padding: 10px;
+    }
+    .category ul li{
+        height: 40px;
+        margin-bottom: 20px;
+    }
 }
