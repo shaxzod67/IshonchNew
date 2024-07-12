@@ -42,21 +42,22 @@ const Royhat = () => {
           <table className='table'>
             <tbody>
               <tr>
-                <td><b>Ism: </b></td>
+                
                 <td>
-                  <input
+                  <input className='inputName'
                     onChange={(e) => setIsm(e.target.value)}
                     value={ism}
                     type="text"
                     name="Ism"
+                    placeholder='Ismingiz'
                     required
                   />
                 </td>
               </tr>
               <tr>
-                <td><b>Familya: </b></td>
+                
                 <td>
-                  <input
+                  <input className='inputName'
                     onChange={(e) => setFamilya(e.target.value)}
                     value={familya}
                     type="text"
@@ -66,9 +67,9 @@ const Royhat = () => {
                 </td>
               </tr>
               <tr>
-                <td><b>Telfon nomer: </b></td>
+                
                 <td>
-                  <input
+                  <input className='inputName'
                     onChange={(e) => setTelfon(e.target.value)}
                     value={telfon}
                     type="number"
@@ -80,10 +81,18 @@ const Royhat = () => {
               <tr className='fan'>
                 <td><b>Fan: </b></td>
                 <td className='fanTD'>
-                  <input type="radio" name="Fan" value="Kimyo" /><span>Kimyo</span>
+                  {/* <input type="radio" name="Fan" value="Kimyo" /><span>Kimyo</span>
                   <input type="radio" name="Fan" value="Biologiya" /><span>Biologiya</span>
                   <input type="radio" name="Fan" value="Matematika" /><span>Matematika</span>
-                  <input required type="radio" name="Fan" value="Tarix" /><span>Tarix</span>
+                  <input required type="radio" name="Fan" value="Tarix" /><span>Tarix</span> */}
+
+
+                  <select name="Fan"  id="">
+                    <option value="Kimyo">Kimyo</option>
+                    <option value="Biologiya">Biologiya</option>
+                    <option value="Tarix">Tarix</option>
+                    <option value="Matematika">Matematika</option>
+                  </select>
                 </td>
               </tr>
             </tbody>

@@ -5,31 +5,34 @@
     scroll-behavior: smooth;
 }
 
-
+body{
+    background-color: black;
+}
 
 .table {
-    width: 25%;
+    width: 30%;
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
     padding: 10px;
-    border-radius: 12px;
+    border-radius: 6px;
     box-shadow: 15px 15px 20px rgb(17 24 39);
     background: rgb(17 24 39);
 }
-
-td input {
-    width: 100%;
-    height: 30px;
-    background: #f2f2f221;
-    outline: none;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom: 2px solid white;
-    padding: 2px 5px;
-    color: white;
+td:last-child{
+    border: 1px solid yellow;
+    width: 400px;
+}
+td input .inputName {
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    color: #111;
+    padding: 1em;
+    margin-bottom: 2em;
 }
 
 tr {
