@@ -37,57 +37,52 @@ const Royhat = () => {
         </Link>
       </button>
       <form method="post" autoComplete="off" name="google-sheet" onSubmit={handleSubmit}>
-        <center><br /><br />
-          <h1>Registration Form</h1><br />
+        <center>
+          <h1 className='royhat-h1'>Ro'yhatdan o'tish</h1>
           <table className='table'>
             <tbody>
               <tr>
-                
                 <td>
                   <input className='inputName'
                     onChange={(e) => setIsm(e.target.value)}
                     value={ism}
                     type="text"
                     name="Ism"
-                    placeholder='Ismingiz'
+                    placeholder='Ism'
                     required
                   />
                 </td>
               </tr>
               <tr>
-                
+
                 <td>
                   <input className='inputName'
                     onChange={(e) => setFamilya(e.target.value)}
                     value={familya}
                     type="text"
                     name="Familya"
+                    placeholder='Familya'
                     required
                   />
                 </td>
               </tr>
               <tr>
-                
+
                 <td>
                   <input className='inputName'
                     onChange={(e) => setTelfon(e.target.value)}
                     value={telfon}
                     type="number"
                     name="Telfon"
+                    placeholder='Telfon raqam'
                     required
                   />
                 </td>
               </tr>
-              <tr className='fan'>
-                <td><b>Fan: </b></td>
-                <td className='fanTD'>
-                  {/* <input type="radio" name="Fan" value="Kimyo" /><span>Kimyo</span>
-                  <input type="radio" name="Fan" value="Biologiya" /><span>Biologiya</span>
-                  <input type="radio" name="Fan" value="Matematika" /><span>Matematika</span>
-                  <input required type="radio" name="Fan" value="Tarix" /><span>Tarix</span> */}
-
-
-                  <select name="Fan"  id="">
+              <tr>
+                <td>
+                  <select className='select-royhat' name="Fan" id="" >
+                    <option value="Tanlanmadi">Fanlar</option>
                     <option value="Kimyo">Kimyo</option>
                     <option value="Biologiya">Biologiya</option>
                     <option value="Tarix">Tarix</option>
@@ -96,11 +91,11 @@ const Royhat = () => {
                 </td>
               </tr>
             </tbody>
-          <div className='fanBtn'>
-            <button onClick={handleClick} className='fanButton' type="submit" name="submit" value="Submit">
-              Yuborish
-            </button>
-          </div>
+            <div className='fanBtn'>
+              <button onClick={handleClick} className='fanButton' type="submit" name="submit" value="Submit">
+                Yuborish
+              </button>
+            </div>
           </table>
         </center>
       </form>

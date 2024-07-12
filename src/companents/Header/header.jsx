@@ -8,12 +8,12 @@ import { signOut } from 'firebase/auth';
 import { AuthContext } from '../../contex/AuthContext';
 import { notification } from 'antd';
 const Header = () => {
-    const handleClick = () => {
-        return notification.info({
-            message: "Kuting ",
-            description: "Bir necha soniya ichida natijalar ko'rinadi"
-        })
-    }
+    // const handleClick = () => {
+    //     return notification.info({
+    //         message: "Kuting ",
+    //         description: "Bir necha soniya ichida natijalar ko'rinadi"
+    //     })
+    // }
     const navigate = useNavigate();
     const { dispatch } = useContext(AuthContext);
     const token = localStorage.getItem('user');
@@ -54,7 +54,7 @@ const Header = () => {
                             </div>
                         ) : (
                             < div className='sign'>
-                                <button onClick={handleClick} className="signin">
+                                <button className="signin">
                                     <Link to="/natija">Natija</Link>
                                 </button>
                                 <button onClick={handleSignOut} className="signup">

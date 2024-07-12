@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,72 +8,108 @@
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: black;
+body {
+    background: #F5FBD5;
 }
 
 .table {
-    width: 30%;
-    height: 500px;
+    width: 100%;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
     padding: 10px;
-    border-radius: 6px;
-    box-shadow: 15px 15px 20px rgb(17 24 39);
-    background: rgb(17 24 39);
+    border-top-left-radius: 100px;
+    background: #3C896D;
 }
-td:last-child{
-    border: 1px solid yellow;
-    width: 400px;
+
+tbody {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
 }
-td input .inputName {
-    width: 200px;
-    height: 20px;
+
+.royhat-h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 35px;
+    margin: 20px;
+}
+
+td:last-child {
+    width: 450px;
+}
+
+td {
+    height: 50px;
+}
+
+td .inputName {
+    width: 100%;
+    height: 50px;
     border: none;
-    border-bottom: 1px solid #eee;
     color: #111;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
     padding: 1em;
+    outline: none;
     margin-bottom: 2em;
+    border-radius: 6px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.473);
+    background: #F5FBD5;
+}
+
+.select-royhat {
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    outline: none;
+    background: #F5FBD5;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.473);
+
 }
 
 tr {
+    width: 500px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     align-items: center;
-    justify-content: space-between;
-    color: white;
+    justify-content: center;
     padding: 10px 20px;
-    line-height: 40px;
-    margin-top: 20px;
-
-}
-
-.fan {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.fanTD {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto;
-    align-items: center;
-    column-gap: 10px;
+    margin-top: 10px;
 }
 
 .fanButton {
-    width: 150px;
-    height: 30px;
-    background: white;
-    color: black;
+    width: 450px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.786);
+    color: #F5FBD5;
     text-align: center;
     border-radius: 8px;
+    transition: .7s;
+    font-weight: bold;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.57);
+    font-size: 22px;
 }
-.fanButton:hover{
-    background-color: rgba(89, 89, 228, 0.832);
-    color: #fff;
+
+.fanButton:hover {
+    background-color: #F5FBD5;
+    color: black;
 }
+
 .fanBtn {
     display: flex;
     align-items: center;
@@ -78,31 +117,30 @@ tr {
     margin: auto;
 }
 
-@media screen and (max-width: 400px) {
-    .table {
-        width: 90%;
+@media screen and (max-width: 520px) {
+
+    tr {
+        max-width: 350px;
     }
 
-    .fanTD {
-        width: 100%;
-        grid-template-columns: auto auto auto auto;
-
-
-    }
-
-    .fan {
-        display: grid;
-        grid-template-columns: auto auto;
+    td:last-child {
+        max-width: 350px;
     }
 
     .fanButton {
-        width: 120px;
-        height: 30px;
-        background: white;
-        color: black;
-        text-align: center;
-        border-radius: 8px;
-        margin-bottom: 50px;
+        width: 300px;
+        height: 50px;
+    }
+    td{
+        padding-left: 20px;
+    }
+    td .inputName {
+        width: 90%;
+        margin: auto;
+    }
+
+    .select-royhat {
+        width: 90%;
     }
 
 }
