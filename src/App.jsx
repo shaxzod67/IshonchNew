@@ -4,6 +4,7 @@ import Header from './companents/Header/header';
 import { Natija } from './companents/Natija/natija';
 import Royhat from './companents/Royhat/Royhat';
 import { GuruhLLA } from './companents/Natija/guruhLLA';
+import { Fanlar } from './companents/Header/fanlar';
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Header />} />
         <Route path="/natija" element={<Natija />} />
         <Route path="/guruhLLA" element={<GuruhLLA />} />
+        <Route path="/fanlar" element={<Fanlar />} />
         <Route path="/royhat" element={<Royhat />} />
       </Routes>
     </>

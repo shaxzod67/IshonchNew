@@ -7,9 +7,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
-body {
+.royhat_body{
     background: #F5FBD5;
+
 }
 
 .table {

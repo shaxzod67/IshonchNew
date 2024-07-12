@@ -30,7 +30,7 @@ const Royhat = () => {
   }
 
   return (
-    <div>
+    <div className='royhat_body'>
       <button className='knopka'>
         <Link to="/">
           <FaChevronLeft />
