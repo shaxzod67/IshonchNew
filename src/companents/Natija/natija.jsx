@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { FaChevronLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
-import { useRef } from 'react';
-import { MdOutlineCancel } from "react-icons/md";
 import './natija.css';
 
 export const Natija = () => {
@@ -16,10 +14,18 @@ export const Natija = () => {
     { title: "Kimyo", group: "Guruh LLA 6", link: "/guruhLLA" },
     { title: "Tarix", group: "Guruh LLA 7", link: "/guruhLLA" },
     { title: "Matematika", group: "Guruh LLA 8", link: "/guruhLLA" },
+    { title: "Tarix", group: "Guruh LLA 9", link: "/guruhLLA" },
+    { title: "Biologiya", group: "Guruh LLR 1", link: "/guruhLLA" },
+    { title: "Kimyo", group: "Guruh LLR 2", link: "/guruhLLA" },
+    { title: "Tarix", group: "Guruh LLR 3", link: "/guruhLLA" },
+    { title: "Matematika", group: "Guruh LLR 4", link: "/guruhLLA" },
+    { title: "Kimyo", group: "Guruh LLR 5", link: "/guruhLLA" },
   ];
-  const navRef = useRef();
+  const [showNavbarToggle , setShowNavbar] = useState('aside');
   const showNavbar = () => {
-  navRef.current.classList.toggle('navBar')
+      showNavbarToggle === "aside"
+      ? setShowNavbar("aside mediaAside")
+      : setShowNavbar("aside");
   }
 
   const [filter, setFilter] = useState('Hammasi');
@@ -46,13 +52,9 @@ export const Natija = () => {
               <FaChevronLeft />
             </Link>
           </button>
-          <button className="menu " onClick={showNavbar}>
+          <div className="menu" onClick={showNavbar}>
             <IoMenu />
-          </button>
-          {/* <button className='menu' onClick={showNavbar}>
-            <MdOutlineCancel />
-          </button> */}
-
+          </div>
           <div className="nav">
             <h1>Ishonch</h1>
             <ul>
@@ -69,7 +71,7 @@ export const Natija = () => {
           </div>
         </nav>
       </header>
-      <aside ref={navRef}>
+      <aside className={showNavbarToggle}>
         <div className="category">
           <ul>
             <li>
