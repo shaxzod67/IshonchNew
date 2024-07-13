@@ -4,7 +4,7 @@ export const Jamoa = () =>{
     return(
         <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
-                        <h1 className="text-2xl font-medium title-font mb-4 text-white tracking-widest">Bizning Jamoa</h1>
+                        <h1 className="text-2xl font-medium title-font mb-4 text-[#10BC10] tracking-widest">Bizning Jamoa</h1>
                         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
                     </div>
                     <div className="jamoa">
@@ -12,7 +12,7 @@ export const Jamoa = () =>{
                             <div className="jamoa_box">
                                 <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200" />
                                 <div className="flex-grow sm:pl-8">
-                                    <h2 className="title-font font-medium text-lg text-white">Anvar Jorayev</h2>
+                                    <h2 className="title-font font-medium text-lg text-[#10BC10]">Anvar Jorayev</h2>
                                     <h3 className="text-gray-500 mb-3">Kimyo</h3>
                                     <p className="mb-4">Jizzax Davlat Pedagogika inustutini tamomlagan</p>
                                     <span className="inline-flex">
@@ -39,7 +39,7 @@ export const Jamoa = () =>{
                             <div className="jamoa_box">
                                 <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201" />
                                 <div className="flex-grow sm:pl-8">
-                                    <h2 className="title-font font-medium text-lg text-white">Doston Hakimov</h2>
+                                    <h2 className="title-font font-medium text-lg text-[#10BC10]">Doston Hakimov</h2>
                                     <h3 className="text-gray-500 mb-3">Biologiya</h3>
                                     <p className="mb-4">Jizzax Davlat Pedagogika inustutini tamomlagan</p>
                                     <span className="inline-flex">
@@ -66,7 +66,7 @@ export const Jamoa = () =>{
                             <div className="jamoa_box">
                                 <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204" />
                                 <div className="flex-grow sm:pl-8">
-                                    <h2 className="title-font font-medium text-lg text-white">Bahodir Torayev</h2>
+                                    <h2 className="title-font font-medium text-lg text-[#10BC10]">Bahodir Torayev</h2>
                                     <h3 className="text-gray-500 mb-3">Tarix</h3>
                                     <p className="mb-4">Jizzax Davlat Pedagogika inustutini tamomlagan</p>
                                     <span className="inline-flex">
@@ -93,7 +93,7 @@ export const Jamoa = () =>{
                             <div className="jamoa_box">
                                 <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206" />
                                 <div className="flex-grow sm:pl-8">
-                                    <h2 className="title-font font-medium text-lg text-white">Lobar Ahmedova</h2>
+                                    <h2 className="title-font font-medium text-lg text-[#10BC10]">Lobar Ahmedova</h2>
                                     <h3 className="text-gray-500 mb-3">Matematika</h3>
                                     <p className="mb-4">Jizzax Davlat Pedagogika inustutini tamomlagan</p>
                                     <span className="inline-flex">

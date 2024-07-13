@@ -22,7 +22,7 @@ const Header = () => {
     }
     return (
         <div>
-            <header className="text-gray-400 bg-gray-900 body-font">
+            <header className=" bg-gray-900 body-font">
                 <div className="navbar">
                     <div className="navbar1">
                         <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
@@ -56,7 +56,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <section className="text-gray-400 bg-gray-900 body-font h-[auto]">
+            <section className="text-gray-400 body-font h-[auto]">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
                         <img className="object-cover object-center rounded w-[100%] h-[100%]" alt="hero" src={ishonchpng} />

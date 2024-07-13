@@ -16,7 +16,6 @@
     height: 70px;
     position: fixed;
     z-index: 1;
-    border: 1px solid red;
 }
 
 .navbar1 {
@@ -28,8 +27,7 @@
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
-    background-color: red;
+    background: #10BC10;
 
 }
 
@@ -41,7 +39,10 @@
     grid-template-columns: auto auto auto auto;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+}
+.navUl li {
+    color: #fff;
+    font-weight: 600;
 }
 
 .lineBig {
@@ -97,16 +98,18 @@
     gap: 10px;
 }
 
-.toggle .line1{
-    transform: rotate(-47deg)  translate(-4px , -5px);
+.toggle .line1 {
+    transform: rotate(-47deg) translate(-4px, -5px);
     margin-top: 10px;
     margin-left: 8px;
 }
-.toggle .line2{
+
+.toggle .line2 {
     opacity: 0;
 }
-.toggle .line3{
-    transform: rotate(47deg)  translate(-4px , -5px);
+
+.toggle .line3 {
+    transform: rotate(47deg) translate(-4px, -5px);
 }
 
 
@@ -136,13 +139,15 @@
         right: 0;
         height: 30%;
         display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-        border: 1px solid yellow;
-        background-color: teal;
+        grid-template-columns: auto ;
+        justify-content: start;
+        background: rgba(255, 255, 255, 0.366);
+        backdrop-filter: blur(30px);
         transform: translateY(-150%);
         transition: .7s ease-in;
-        z-index:-1;
+        padding-left: 20px;
+        box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.301);
+        z-index: -1;
     }
 
     .navUl_active {
@@ -151,8 +156,19 @@
     }
 
     .navbar1 ul li {
-        background-color: #000;
-        width: 200px;
+        width: 150px;
+        height: 40px;
+        border-radius: 6px;
+        padding: 5px 10px;
+        background-color: #10BC10;
+        color: #fff;
+        font-weight: 600;
+        transition: .5s;
+    }
+    .navbar1 ul li:hover {
+        
+        background-color: #fff;
+        color: #10BC10;
     }
 
 }
@@ -162,7 +178,7 @@
 
 @media screen and (max-width: 400px) {
 
-    
+
 
     .jamoa_box {
         align-items: center;
