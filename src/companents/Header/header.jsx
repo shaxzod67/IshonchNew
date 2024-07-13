@@ -5,37 +5,55 @@ import { Reyting } from './reyting';
 import { Fanlar } from './fanlar';
 import { Jamoa } from './jamoa';
 import { Footer } from './footer';
+import { useState } from 'react';
 const Header = () => {
+
+    const [active, setActive] = useState("navUl");
+    const[toggleNav , setToggleNav] = useState("lineBig");
+    const handleClickNavbar = () => {
+        active === "navUl"
+        ? setActive("navUl navUl_active") 
+        : setActive("navUl")
+
+
+        toggleNav === "lineBig"
+        ? setToggleNav("lineBig toggle")
+        : setToggleNav("lineBig")
+    }
     return (
         <div>
             <header className="text-gray-400 bg-gray-900 body-font">
                 <div className="navbar">
-                    <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                        <span className="ml-3 text-xl">Ishonch</span>
-                    </Link>
-                    <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                        <ul>
-                            <li>
-                                <Link to='/'>Asosiy</Link>
-                            </li>
-                            <li>
-                                <Link  to="/fanlar" >Fanlar</Link>
-                            </li>
-                            <li>
-                                <Link to="/natija">Natijalar</Link>
-                            </li>
-                            <li>
-                                <Link to='/royhat'>Aloqa</Link>
-                            </li>
-                        </ul>
+                    <div className="navbar1">
+                        <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                            <span className="ml-3 text-xl">Ishonch</span>
+                        </Link>
+                        <nav >
+                            <ul className={active}>
+                                <li>
+                                    <Link to='/'>Asosiy</Link>
+                                </li>
+                                <li>
+                                    <a href='#fanlar' >Fanlar</a>
+                                </li>
+                                <li>
+                                    <Link to="/natija">Natijalar</Link>
+                                </li>
+                                <li>
+                                    <Link to='/royhat'>Aloqa</Link>
+                                </li>
+                            </ul>
 
-
-
-
-                    </nav>
+                            <div onClick={handleClickNavbar} className={toggleNav}>
+                                <div className="line1"></div>
+                                <div className="line2"></div>
+                                <div className="line3"></div>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </header>
             <section className="text-gray-400 bg-gray-900 body-font h-[auto]">
@@ -53,11 +71,11 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                 <Reyting/>
-                  <Fanlar />
-                  <Jamoa/>
+                <Reyting />
+                <Fanlar />
+                <Jamoa />
             </section>
-            <Footer/>
+            <Footer />
         </div>
     );
 };
