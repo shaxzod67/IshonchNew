@@ -69,7 +69,9 @@ header {
     height: auto;
     right: 0;
 }
-
+.header_ong img{
+    width: 70%;
+}
 
 .navUl {
     width: 600px;
