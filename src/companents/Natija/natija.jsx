@@ -109,7 +109,7 @@ export const Natija = () => {
                     {item.title}
                   </h3>
                   <div className="btn">
-                    <h2 className="text-white title-font text-lg font-medium">
+                    <h2 className="text-black title-font text-lg font-medium">
                       {item.group}
                     </h2>
                     <button className="text-white bg-indigo-500 border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
