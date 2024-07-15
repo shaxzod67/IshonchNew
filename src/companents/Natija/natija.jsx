@@ -2,24 +2,25 @@ import  { useState, useEffect } from 'react';
 import { FaChevronLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
+
 import './natija.css';
 
 export const Natija = () => {
   const allItems = [
-    { title: "Kimyo", group: "Guruh LLA 1", link: "/guruhLLA" },
-    { title: "Biologiya", group: "Guruh LLA 2", link: "/guruhLLA" },
-    { title: "Tarix", group: "Guruh LLA 3", link: "/guruhLLA" },
-    { title: "Matematika", group: "Guruh LLA 4", link: "/guruhLLA" },
-    { title: "Biologiya", group: "Guruh LLA 5", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLA 6", link: "/guruhLLA" },
-    { title: "Tarix", group: "Guruh LLA 7", link: "/guruhLLA" },
-    { title: "Matematika", group: "Guruh LLA 8", link: "/guruhLLA" },
-    { title: "Tarix", group: "Guruh LLA 9", link: "/guruhLLA" },
-    { title: "Biologiya", group: "Guruh LLR 1", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLR 2", link: "/guruhLLA" },
-    { title: "Tarix", group: "Guruh LLR 3", link: "/guruhLLA" },
-    { title: "Matematika", group: "Guruh LLR 4", link: "/guruhLLA" },
-    { title: "Kimyo", group: "Guruh LLR 5", link: "/guruhLLA" },
+    { title: "Kimyo", group: "Guruh LLA 1", link: "/guruhLLA" , imgs: "https://i.pinimg.com/564x/d5/dd/38/d5dd38a87c9fac55873dd31ba52f68a1.jpg" },
+    { title: "Biologiya", group: "Guruh LLA 2", link: "/guruhLLA", imgs:"https://i.pinimg.com/564x/4b/0d/0c/4b0d0ce734afdf6c59ea317c4d4e292b.jpg" },
+    { title: "Tarix", group: "Guruh LLA 3", link: "/guruhLLA", imgs:"https://i.pinimg.com/236x/4f/21/fc/4f21fc3d797bbb66ddd37b09e92e70cc.jpg" },
+    { title: "Matematika", group: "Guruh LLA 4", link: "/guruhLLA", imgs:"https://i.pinimg.com/236x/cc/fa/54/ccfa547b7bd5488a26fec7a5ea2dd9f6.jpg" },
+    { title: "Biologiya", group: "Guruh LLA 5", link: "/guruhLLA", imgs:"https://i.pinimg.com/564x/4b/0d/0c/4b0d0ce734afdf6c59ea317c4d4e292b.jpg" },
+    { title: "Kimyo", group: "Guruh LLA 6", link: "/guruhLLA" , imgs: "https://i.pinimg.com/564x/d5/dd/38/d5dd38a87c9fac55873dd31ba52f68a1.jpg"},
+    { title: "Tarix", group: "Guruh LLA 7", link: "/guruhLLA", imgs:"https://i.pinimg.com/236x/4f/21/fc/4f21fc3d797bbb66ddd37b09e92e70cc.jpg" },
+    { title: "Matematika", group: "Guruh LLA 8", link: "/guruhLLA", imgs:"https://i.pinimg.com/236x/cc/fa/54/ccfa547b7bd5488a26fec7a5ea2dd9f6.jpg" },
+    { title: "Tarix", group: "Guruh LLA 9", link: "/guruhLLA", imgs:"https://i.pinimg.com/236x/4f/21/fc/4f21fc3d797bbb66ddd37b09e92e70cc.jpg" },
+    { title: "Biologiya", group: "Guruh LLR 1", link: "/guruhLLA" , imgs:"https://i.pinimg.com/564x/4b/0d/0c/4b0d0ce734afdf6c59ea317c4d4e292b.jpg"},
+    { title: "Kimyo", group: "Guruh LLR 2", link: "/guruhLLA" ,  imgs: "https://i.pinimg.com/564x/d5/dd/38/d5dd38a87c9fac55873dd31ba52f68a1.jpg"},
+    { title: "Tarix", group: "Guruh LLR 3", link: "/guruhLLA", imgs:"https://i.pinimg.com/236x/4f/21/fc/4f21fc3d797bbb66ddd37b09e92e70cc.jpg" },
+    { title: "Matematika", group: "Guruh LLR 4", link: "/guruhLLA", imgs:"https://i.pinimg.com/236x/cc/fa/54/ccfa547b7bd5488a26fec7a5ea2dd9f6.jpg" },
+    { title: "Kimyo", group: "Guruh LLR 5", link: "/guruhLLA" ,  imgs: "https://i.pinimg.com/564x/d5/dd/38/d5dd38a87c9fac55873dd31ba52f68a1.jpg"},
   ];
   const [showNavbarToggle , setShowNavbar] = useState('aside');
   const showNavbar = () => {
@@ -101,7 +102,7 @@ export const Natija = () => {
                   <img
                     alt="ecommerce"
                     className="object-cover object-center w-full h-full block"
-                    src="https://dummyimage.com/420x260"
+                    src={item.imgs}
                   />
                 </a>
                 <div className="mt-4">
