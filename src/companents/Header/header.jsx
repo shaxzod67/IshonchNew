@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import kimyo from '../../img/kimyo.png';
+import bg2 from '../../img/bg2.jpg';
 import { Reyting } from './reyting';
 import { Fanlar } from './fanlar';
 import { Jamoa } from './jamoa';
@@ -69,11 +69,11 @@ const Header = () => {
                             quisquam veritatis temporibus eaque, esse reiciendis aspernatur,
                             voluptatum repellendus.
                         </p>
-                        <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><Link to="/royhat">Ro'yhatdan o'tish</Link></button>
+                        <button className="inline-flex text-white bg-green-500 border-0 py-2 px-4 focus:outline-none hover:bg-green-600 rounded text-lg"><Link to="/royhat">Ro'yhatdan o'tish</Link></button>
 
                     </div>
                     <div className="header_ong">
-                 <img src={kimyo} alt="" />
+                        <img src={bg2} alt="" />
                     </div>
                 </div>
             </header>

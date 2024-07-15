@@ -1,4 +1,5 @@
 
+import oqituvchi from '../../img/oqituvchi.jpg';
 
 export const Jamoa = () =>{
     return(
@@ -10,7 +11,7 @@ export const Jamoa = () =>{
                     <div className="jamoa">
                         <div className="p-4 lg:w-1/2">
                             <div className="jamoa_box">
-                                <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200" />
+                                <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src={oqituvchi} />
                                 <div className="flex-grow sm:pl-8">
                                     <h2 className="title-font font-medium text-lg text-[#10BC10]">Anvar Jorayev</h2>
                                     <h3 className="text-gray-500 mb-3">Kimyo</h3>
@@ -37,7 +38,7 @@ export const Jamoa = () =>{
                         </div>
                         <div className="p-4 lg:w-1/2">
                             <div className="jamoa_box">
-                                <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201" />
+                                <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src={oqituvchi} />
                                 <div className="flex-grow sm:pl-8">
                                     <h2 className="title-font font-medium text-lg text-[#10BC10]">Doston Hakimov</h2>
                                     <h3 className="text-gray-500 mb-3">Biologiya</h3>
@@ -64,7 +65,7 @@ export const Jamoa = () =>{
                         </div>
                         <div className="p-4 lg:w-1/2">
                             <div className="jamoa_box">
-                                <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204" />
+                                <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"  src={oqituvchi}/>
                                 <div className="flex-grow sm:pl-8">
                                     <h2 className="title-font font-medium text-lg text-[#10BC10]">Bahodir Torayev</h2>
                                     <h3 className="text-gray-500 mb-3">Tarix</h3>
@@ -91,7 +92,7 @@ export const Jamoa = () =>{
                         </div>
                         <div className="p-4 lg:w-1/2">
                             <div className="jamoa_box">
-                                <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206" />
+                                <img alt="team" className="flex-shrink-0 mx-[auto] rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"  src={oqituvchi} />
                                 <div className="flex-grow sm:pl-8">
                                     <h2 className="title-font font-medium text-lg text-[#10BC10]">Lobar Ahmedova</h2>
                                     <h3 className="text-gray-500 mb-3">Matematika</h3>

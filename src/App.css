@@ -16,7 +16,6 @@ header {
     background-color: #050A30;
     object-fit: cover;
     background-size: cover;
-
 }
 
 .navbar {
@@ -35,8 +34,7 @@ header {
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-between;
-    backdrop-filter: blur(45px);
-    background: rgba(0, 0, 0, 0.314);
+    background: #050A30;
 }
 
 .ishonch_h1 {
@@ -53,7 +51,7 @@ header {
 
 .header {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template-columns: auto auto;
     padding: 200px 50px 0 50px;
@@ -61,18 +59,15 @@ header {
 }
 
 .header_chap {
-    width: 60%;
+    width: 100%;
     height: auto;
-    position: relative;
-    border: 1px solid red;
 
 }
 
 .header_ong {
-    width: 40%;
-    height: 630px;
+    width: 100%;
+    height: auto;
     right: 0;
-    border: 1px solid yellow;
 }
 
 
@@ -178,17 +173,43 @@ header {
         display: grid;
     }
 
+    .header {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding-top: 100px;
+
+    }
+
+    .header_ong {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .header_ong img{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    .ishonch_h1 {
+        font-size: 40px;
+    }
+    .ishonch_p{
+        font-size: 14px;
+    }
+ 
+
     .navUl {
         position: fixed;
         top: 70px;
         width: 100%;
         right: 0;
-        height: 30%;
+        height: 250px;
         display: grid;
         grid-template-columns: auto;
         justify-content: start;
-        background: rgba(255, 255, 255, 0.366);
-        backdrop-filter: blur(30px);
+        background: #ffffff46;
+        backdrop-filter: blur(15px);
         transform: translateY(-150%);
         transition: .7s ease-in;
         padding-left: 20px;
@@ -206,7 +227,7 @@ header {
         height: 40px;
         border-radius: 6px;
         padding: 5px 10px;
-        background-color: #0A7029;
+        background-color: #050A30;
         color: #fff;
         font-weight: 600;
         transition: .5s;
@@ -215,7 +236,8 @@ header {
     .navbar1 ul li:hover {
 
         background-color: #fff;
-        color: #0A7029;
+        box-shadow: 15px 15px  20px rgba(128, 128, 128, 0.574);
+        color: #050A30;
     }
 
 }
@@ -223,7 +245,7 @@ header {
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
 
 
 
@@ -236,5 +258,25 @@ header {
     .jamoa_box img {
         width: 100%;
         height: 80%;
+    }
+    .navUl{
+        height: 250px;
+    }
+    .header_chap{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_ong {
+        width: 90%;
+    }
+    
+    .ishonch_h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .ishonch_p{
+        display: none;
     }
 }
