@@ -25,7 +25,7 @@ const Royhat = () => {
   const handleClick = () => {
     notification.info({
       message: "Ko'rib chiqilyabdi",
-      description: "Siz bilan tez orada bog'lanamiz"
+      description: "Sizga tez orada malumotni javobini aytamiz"
     });
   }
 

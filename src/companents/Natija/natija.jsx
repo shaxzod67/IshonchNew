@@ -45,7 +45,7 @@ export const Natija = () => {
 
   return (
     <div className="natija">
-      <header>
+      
         <nav className="navv">
           <button className="knopka">
             <Link to="/">
@@ -70,7 +70,6 @@ export const Natija = () => {
             </ul>
           </div>
         </nav>
-      </header>
       <aside className={showNavbarToggle}>
         <div className="category">
           <ul>

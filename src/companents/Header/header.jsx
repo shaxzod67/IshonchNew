@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import ishonchpng from '../../img/Ishonch.png';
+import kimyo from '../../img/kimyo.png';
 import { Reyting } from './reyting';
 import { Fanlar } from './fanlar';
 import { Jamoa } from './jamoa';
@@ -9,20 +9,20 @@ import { useState } from 'react';
 const Header = () => {
 
     const [active, setActive] = useState("navUl");
-    const[toggleNav , setToggleNav] = useState("lineBig");
+    const [toggleNav, setToggleNav] = useState("lineBig");
     const handleClickNavbar = () => {
         active === "navUl"
-        ? setActive("navUl navUl_active") 
-        : setActive("navUl")
+            ? setActive("navUl navUl_active")
+            : setActive("navUl")
 
 
         toggleNav === "lineBig"
-        ? setToggleNav("lineBig toggle")
-        : setToggleNav("lineBig")
+            ? setToggleNav("lineBig toggle")
+            : setToggleNav("lineBig")
     }
     return (
         <div>
-            <header className=" bg-gray-900 body-font">
+            <header>
                 <div className="navbar">
                     <div className="navbar1">
                         <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
@@ -45,6 +45,7 @@ const Header = () => {
                                 <li>
                                     <Link to='/royhat'>Aloqa</Link>
                                 </li>
+
                             </ul>
 
                             <div onClick={handleClickNavbar} className={toggleNav}>
@@ -55,22 +56,29 @@ const Header = () => {
                         </nav>
                     </div>
                 </div>
-            </header>
-            <section className="text-gray-400 body-font h-[auto]">
-                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
-                        <img className="object-cover object-center rounded w-[100%] h-[100%]" alt="hero" src={ishonchpng} />
-                    </div>
-                    <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                        <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Ishonch o'quv
-                            <br className="hidden lg:inline-block" /> markazi
+                <div className="header">
+                    <div className="header_chap">
+                        <h1 className='ishonch_h1'>
+                            Ishonch O'quv markazi
                         </h1>
-                        <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-                        <div className="flex justify-center">
-                            <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><Link to="/royhat">Ro'yhatdan o'tish</Link></button>
-                        </div>
+                        <p className='ishonch_p'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Et laboriosam nemo alias facere velit cupiditate illum
+                            possimus praesentium dignissimos, expedita quisquam repellendus,
+                            ab at unde. Ducimus numquam blanditiis tempora ipsum laudantium
+                            quisquam veritatis temporibus eaque, esse reiciendis aspernatur,
+                            voluptatum repellendus.
+                        </p>
+                        <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"><Link to="/royhat">Ro'yhatdan o'tish</Link></button>
+
+                    </div>
+                    <div className="header_ong">
+                 <img src={kimyo} alt="" />
                     </div>
                 </div>
+            </header>
+            <section className="text-gray-400 body-font h-[auto]">
+
                 <Reyting />
                 <Fanlar />
                 <Jamoa />

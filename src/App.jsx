@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './companents/Header/header';
 import { Natija } from './companents/Natija/natija';
@@ -7,7 +7,6 @@ import { GuruhLLA } from './companents/Natija/guruhLLA';
 import { Fanlar } from './companents/Header/fanlar';
 
 function App() {
-  
 
   return (
     <>
