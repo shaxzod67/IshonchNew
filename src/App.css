@@ -88,7 +88,7 @@ header {
     font-weight: 600;
 }
 .navUl li a{
-    width: 100px;
+    width: 100%;
     height: 30px;
     display: grid;
     align-items: center;
@@ -165,7 +165,19 @@ header {
     transform: rotate(47deg) translate(-4px, -5px);
 }
 
-
+.iframe_box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.loading{
+    position: absolute;
+    top: 300px;
+    font-size: 40px;
+}
 
 @media screen and (max-width: 920px) {
     .knopka {

@@ -14,9 +14,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 const Header = () => {
 
     const handleTel = () => {
-       
-            window.location.href = "tel:+998992727907";
-        
+        window.location.href = "tel:+998992727907";
+
     };
 
 
