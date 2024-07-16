@@ -10,7 +10,7 @@ export const Fanlar = ()=> {
                         <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Bizning o'quv markazimizdagi fanlar quyidagi darsliklar boyicha tolliq darslar otiladi</p>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:flex-wrap md:flex-row md:flex-wrap lg:flex-row xl:flex-row -m-4">
-                        <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <div className="p-4 lg:w-1/4 sm:w-1/2 w-full"  data-aos="fade-right" data-aos-duration="1000">
                             <h2 className="font-medium title-font tracking-widest text-[#050A30]   mb-4 text-sm text-center sm:text-center">Kimyo</h2>
                             <div className="flex justify-around">
                                 <nav className="flex flex-col sm:items-start sm:text-left -mb-1 space-y-2">
@@ -52,7 +52,7 @@ export const Fanlar = ()=> {
                                 </nav>
                             </div>
                         </div>
-                        <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <div className="p-4 lg:w-1/4 sm:w-1/2 w-full"  data-aos="fade-right" data-aos-duration="2000">
                             <h2 className="font-medium title-font tracking-widest text-[#050A30]  mb-4 text-sm text-center sm:text-center">Biologiya</h2>
                             <div className="flex justify-around">
                                 <nav className="flex flex-col sm:items-start sm:text-left -mb-1 space-y-2">
@@ -94,9 +94,9 @@ export const Fanlar = ()=> {
                                 </nav>
                             </div>
                         </div>
-                        <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <div className="p-4 lg:w-1/4 sm:w-1/2 w-full" data-aos="fade-right" data-aos-duration="2500">
                             <h2 className="font-medium title-font tracking-widest text-[#050A30]  mb-4 text-sm text-center sm:text-center">Tarix</h2>
-                            <div className="flex justify-around">
+                            <div className="flex justify-around" >
                                 <nav className="flex flex-col sm:items-start sm:text-left -mb-1 space-y-2">
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
@@ -136,9 +136,9 @@ export const Fanlar = ()=> {
                                 </nav>
                             </div>
                         </div>
-                        <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <div className="p-4 lg:w-1/4 sm:w-1/2 w-full" data-aos="fade-right" data-aos-duration="3000">
                             <h2 className="font-medium title-font tracking-widest text-[#050A30] mb-4 text-sm text-center sm:text-center">Matematika</h2>
-                            <div className="flex justify-around">
+                            <div className="flex justify-around" >
                                 <nav className="flex flex-col sm:items-start sm:text-left -mb-1 space-y-2">
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">

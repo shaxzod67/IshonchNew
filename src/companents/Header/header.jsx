@@ -12,6 +12,8 @@ import { BsGraphUp } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Header = () => {
+ 
+
 
     const handleTel = () => {
         window.location.href = "tel:+998992727907";
@@ -34,7 +36,7 @@ const Header = () => {
     return (
         <div>
             <header>
-                <div className="navbar">
+                <div className="navbar" >
                     <div className="navbar1">
                         <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
@@ -69,7 +71,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="header">
-                    <div className="header_chap">
+                    <div className="header_chap" data-aos="fade-right">
                         <h1 className='ishonch_h1'>
                             Ishonch O'quv markazi
                         </h1>
@@ -84,7 +86,7 @@ const Header = () => {
                         <button className="inline-flex text-white bg-green-500 border-0 py-2 px-4 focus:outline-none hover:bg-green-600 rounded text-lg"><Link to="/royhat">Ro'yhatdan o'tish</Link></button>
 
                     </div>
-                    <div className="header_ong">
+                    <div className="header_ong" data-aos="fade-left">
                         <img src={bg2} alt="" />
                     </div>
                 </div>
