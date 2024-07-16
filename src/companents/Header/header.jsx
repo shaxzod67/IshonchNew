@@ -6,7 +6,19 @@ import { Fanlar } from './fanlar';
 import { Jamoa } from './jamoa';
 import { Footer } from './footer';
 import { useState } from 'react';
+import { MdHome } from "react-icons/md";
+import { FaBookOpen } from "react-icons/fa6";
+import { BsGraphUp } from "react-icons/bs";
+import { FaPhoneAlt } from "react-icons/fa";
+
 const Header = () => {
+
+    const handleTel = () => {
+       
+            window.location.href = "tel:+998992727907";
+        
+    };
+
 
     const [active, setActive] = useState("navUl");
     const [toggleNav, setToggleNav] = useState("lineBig");
@@ -34,16 +46,17 @@ const Header = () => {
                         <nav >
                             <ul className={active}>
                                 <li>
-                                    <Link to='/'>Asosiy</Link>
+                                    <Link to='/'><MdHome /> Asosiy</Link>
                                 </li>
                                 <li>
-                                    <a href='#fanlar' >Fanlar</a>
+                                    <a href='#fanlar' > <FaBookOpen />Fanlar</a>
                                 </li>
                                 <li>
-                                    <Link to="/natija">Natijalar</Link>
+                                    <Link to="/natija"><BsGraphUp />Natijalar</Link>
                                 </li>
                                 <li>
-                                    <Link to='/royhat'>Aloqa</Link>
+                                    <Link><FaPhoneAlt />
+                                        <button onClick={handleTel}>Aloqa</button></Link>
                                 </li>
 
                             </ul>
