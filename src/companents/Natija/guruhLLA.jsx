@@ -10,7 +10,7 @@ export const GuruhLLA = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false); // Corrected spelling of false
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
