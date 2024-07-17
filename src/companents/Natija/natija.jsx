@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { FaChevronLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
-
 import './natija.css';
 
 export const Natija = () => {
@@ -45,7 +44,7 @@ export const Natija = () => {
   };
 
 
- 
+
   return (
     <div className="natija">
 
