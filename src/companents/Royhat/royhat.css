@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 .royhat_body{
-    background: #F5FBD5;
+    background: #fff;
 
 }
 
@@ -64,7 +64,8 @@ td .inputName {
     margin-bottom: 2em;
     border-radius: 6px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.473);
-    background: #F5FBD5;
+    /* background: #F5FBD5; */
+    background: #fff;
 }
 
 .select-royhat {
@@ -77,7 +78,7 @@ td .inputName {
     font-style: normal;
     font-size: 20px;
     outline: none;
-    background: #F5FBD5;
+    background: #fff;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.473);
 
 }
@@ -96,7 +97,7 @@ tr {
     width: 450px;
     height: 50px;
     background: rgba(0, 0, 0, 0.786);
-    color: #F5FBD5;
+    color: #fff;
     text-align: center;
     border-radius: 8px;
     transition: .7s;
@@ -106,7 +107,7 @@ tr {
 }
 
 .fanButton:hover {
-    background-color: #F5FBD5;
+    background-color: #fff;
     color: black;
 }
 
