@@ -10,9 +10,10 @@ import { MdHome } from "react-icons/md";
 import { FaBookOpen } from "react-icons/fa6";
 import { BsGraphUp } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
+import logo from '../../img/logo.jpg'
 
 const Header = () => {
- 
+
 
 
     const handleTel = () => {
@@ -39,9 +40,7 @@ const Header = () => {
                 <div className="navbar" >
                     <div className="navbar1">
                         <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                            </svg>
+                            <img src={logo} alt="" />
                             <span className="ml-3 text-xl">Ishonch</span>
                         </Link>
                         <nav >
@@ -55,19 +54,23 @@ const Header = () => {
                                 <li>
                                     <Link to="/natija"><BsGraphUp />Natijalar</Link>
                                 </li>
-                                <li>
+                                <li >
                                     <Link><FaPhoneAlt />
                                         <button onClick={handleTel}>Aloqa</button></Link>
                                 </li>
 
                             </ul>
-
-                            <div onClick={handleClickNavbar} className={toggleNav}>
+                            <div className="mediaTel">
+                                <Link><FaPhoneAlt />
+                                    <button onClick={handleTel}>Call</button></Link>
+                            </div>
+                            
+                        </nav>
+                        <div onClick={handleClickNavbar} className={toggleNav}>
                                 <div className="line1"></div>
                                 <div className="line2"></div>
                                 <div className="line3"></div>
                             </div>
-                        </nav>
                     </div>
                 </div>
                 <div className="header">

@@ -31,12 +31,21 @@ header {
     margin: auto;
     padding: 0 40px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: space-between;
     background: #050A30;
 }
-
+.navbar1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar1 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
 .ishonch_h1 {
     color: #fff;
     font-size: 45px;
@@ -178,6 +187,22 @@ header {
     top: 300px;
     font-size: 40px;
 }
+.mediaTel{
+    display: none;
+}
+.mediaTel a{
+    width: 70px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: none;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+
+}
 
 @media screen and (max-width: 920px) {
     .knopka {
@@ -263,6 +288,10 @@ header {
         box-shadow: 15px 15px  20px rgba(128, 128, 128, 0.574);
         color: #050A30;
     }
+    .mediaTel{
+        display: block;
+
+    }
 
 }
 
@@ -302,5 +331,9 @@ header {
     }
     .ishonch_p{
         display: none;
+    }
+    .navbar1 img{
+        width: 45px;
+        height: 45px;
     }
 }
