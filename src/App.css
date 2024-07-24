@@ -356,7 +356,7 @@ header {
     height: 200px;
   }
   .navbar1 {
-    padding: 0 10px;
+    padding: 0 20px 0 0px;
   }
   .navbar1 ul li {
     width: 170px;
@@ -375,14 +375,15 @@ header {
   .navbar1 img {
     width: 80px;
     height: 80px;
+    object-fit: cover;
   }
   .logoBox {
     width: 180px;
   }
   .mediaTel a {
-    width: 90px;
+    width: 80px;
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
   }
 }

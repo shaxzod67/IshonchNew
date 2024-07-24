@@ -41,7 +41,7 @@ const Header = () => {
                     <div className="navbar1">
                         <Link to="/" className="logoBox">
                             <img src={logo} alt="" />
-                            <span className="ml-3 text-xl">Ishonch</span>
+                            <span>Ishonch</span>
                         </Link>
                         <nav >
                             <ul className={active}>
