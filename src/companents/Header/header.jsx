@@ -10,7 +10,7 @@ import { MdHome } from "react-icons/md";
 import { FaBookOpen } from "react-icons/fa6";
 import { BsGraphUp } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
-import logo from '../../img/logo.jpg'
+import logo from '../../img/logo.png'
 
 const Header = () => {
 
@@ -39,7 +39,7 @@ const Header = () => {
             <header>
                 <div className="navbar" >
                     <div className="navbar1">
-                        <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                        <Link to="/" className="logoBox">
                             <img src={logo} alt="" />
                             <span className="ml-3 text-xl">Ishonch</span>
                         </Link>
