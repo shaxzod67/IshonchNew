@@ -1,7 +1,5 @@
 
 import { Link } from 'react-router-dom';
-import bg2 from '../../img/bg2.jpg';
-import { Reyting } from './reyting';
 import { Fanlar } from './fanlar';
 import { Jamoa } from './jamoa';
 import { Footer } from './footer';
@@ -76,27 +74,18 @@ const Header = () => {
                 <div className="header">
                     <div className="header_chap" data-aos="fade-right">
                         <h1 className='ishonch_h1'>
-                            Ishonch O'quv markazi
+                           FANLARNI BIZ BILAN QULAY <span>MUHITDA</span> O'RGANING
                         </h1>
-                        <p className='ishonch_p'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Et laboriosam nemo alias facere velit cupiditate illum
-                            possimus praesentium dignissimos, expedita quisquam repellendus,
-                            ab at unde. Ducimus numquam blanditiis tempora ipsum laudantium
-                            quisquam veritatis temporibus eaque, esse reiciendis aspernatur,
-                            voluptatum repellendus.
-                        </p>
-                        <button className="inline-flex text-white bg-green-500 border-0 py-2 px-4 focus:outline-none hover:bg-green-600 rounded text-lg"><Link to="/royhat">Ro'yhatdan o'tish</Link></button>
+                        <button><Link to="/royhat">Ro'yhatdan o'tish</Link></button>
 
                     </div>
                     <div className="header_ong" data-aos="fade-left">
-                        <img src={bg2} alt="" />
+                        <img src="https://i.pinimg.com/564x/39/63/4c/39634cd575aeaff846bd13320e441f38.jpg" alt="" />
                     </div>
                 </div>
             </header>
             <section className="text-gray-400 body-font h-[auto]">
 
-                <Reyting />
                 <Fanlar />
                 <Jamoa />
             </section>
