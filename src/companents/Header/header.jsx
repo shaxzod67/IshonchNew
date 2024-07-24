@@ -9,6 +9,7 @@ import { FaBookOpen } from "react-icons/fa6";
 import { BsGraphUp } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
 import logo from '../../img/logo.png'
+import Talim from './talim';
 
 const Header = () => {
 
@@ -85,7 +86,7 @@ const Header = () => {
                 </div>
             </header>
             <section className="text-gray-400 body-font h-[auto]">
-
+                  <Talim/>
                 <Fanlar />
                 <Jamoa />
             </section>
