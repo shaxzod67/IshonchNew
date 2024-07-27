@@ -19,35 +19,35 @@ export const Fanlar = ()=> {
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>First Link
+                                        </span>Tartib raqami
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Second Link
+                                        </span>Nomi
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Third Link
+                                        </span>Birikmalarda Oksidlanish darajasi
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Fourth Link
+                                        </span>Valentligi
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Fifth Link
+                                        </span>Izotoplari
                                     </a>
                                 </nav>
                             </div>
@@ -61,35 +61,35 @@ export const Fanlar = ()=> {
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>First Link
+                                        </span>Biologik tizimlar
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Second Link
+                                        </span>Ekologiyani rivojlanishi
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Third Link
+                                        </span>Xayotning ekosistema darajasi
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Fourth Link
+                                        </span>Ekosistemaning taritibi
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Fifth Link
+                                        </span>Organizimning yashashmuhiti
                                     </a>
                                 </nav>
                             </div>
@@ -103,35 +103,35 @@ export const Fanlar = ()=> {
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>First Link
+                                        </span>Qadimgi tarix
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Second Link
+                                        </span>Tosh davri
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Third Link
+                                        </span>O'sish davri
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Fourth Link
+                                        </span>Xonliklar 
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Fifth Link
+                                        </span>Yangi davr
                                     </a>
                                 </nav>
                             </div>
@@ -145,35 +145,35 @@ export const Fanlar = ()=> {
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>First Link
+                                        </span>Amallar 
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Second Link
+                                        </span>Ildiz
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Third Link
+                                        </span>Mantiqiy masalalar
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Fourth Link
+                                        </span>Trigonometriya
                                     </a>
                                     <a>
                                         <span className="bg-gray-800 text-indigo-400 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                             <svg fill="none" stroke="currentColor" strokrLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
                                                 <path d="M20 6L9 17l-5-5"></path>
                                             </svg>
-                                        </span>Fifth Link
+                                        </span>Geometrya
                                     </a>
                                 </nav>
                             </div>

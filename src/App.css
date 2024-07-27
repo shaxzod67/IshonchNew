@@ -305,6 +305,10 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
+.jamoa_box img{
+  width: 200px;
+  height: auto;
+}
 .talim_box h2,
 .jamoa_box h2 {
   font-size: 25px;
