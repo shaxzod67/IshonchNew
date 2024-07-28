@@ -1,147 +1,291 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+/* royhat.css */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+/* General styles */
+.royhat_body {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 6px;
 }
-.royhat_body{
-    background: #fff;
-
+.registerImg {
+  width: 600px;
+  height: 600px;
+  height: auto;
+  margin-left: 50px;
+}
+.registerImg img {
+  animation: register_img 5s infinite;
+}
+form {
+  width: 600px;
+  height: 600px;
+  padding: 0 50px;
+}
+.knopka {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.table {
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    padding: 10px;
-    border-top-left-radius: 100px;
-    background: #3C896D;
+.knopka a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
 }
 
-tbody {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
+.center {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #f4f4f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .royhat-h1 {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 35px;
-    margin: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-td:last-child {
-    width: 450px;
+.table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-td {
-    height: 50px;
-}
-
-td .inputName {
-    width: 100%;
-    height: 50px;
-    border: none;
-    color: #111;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 20px;
-    padding: 1em;
-    outline: none;
-    margin-bottom: 2em;
-    border-radius: 6px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.473);
-    /* background: #F5FBD5; */
-    background: #fff;
-}
-
+.inputName,
 .select-royhat {
-    width: 100%;
-    height: 50px;
-    border-radius: 6px;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-size: 20px;
-    outline: none;
-    background: #fff;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.473);
-
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-tr {
-    width: 500px;
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    margin-top: 10px;
+.select-royhat:active {
+  box-shadow: 0px 0px 5px #9370db;
+  border: 1px solid #9370db;
+}
+.inputName:active {
+  box-shadow: 0px 0px 5px #9370db;
+  border: 1px solid #9370db;
+}
+.fanBtn {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .fanButton {
-    width: 450px;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.786);
-    color: #fff;
-    text-align: center;
-    border-radius: 8px;
-    transition: .7s;
-    font-weight: bold;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.57);
-    font-size: 22px;
+  width: calc(100% - 20px);
+  background-color: #9370db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 .fanButton:hover {
-    background-color: #fff;
-    color: black;
+  background-color: #8a2be2;
 }
 
-.fanBtn {
+@keyframes register_img {
+  0% {
+    transform: rotate(5deg) translateX(20px) rotate(-5deg);
+  }
+  100% {
+    transform: rotate(1turn) translateX(20px) rotate(-1turn);
+  }
+}
+
+/* Styles for tablets */
+@media (min-width: 600px) and (max-width: 900px) {
+  .royhat_body {
+    width: 80%;
+    height: 70vh;
+    padding: 40px;
+    margin: 0;
+    grid-template-columns: auto;
+  }
+  .registerImg {
+    width: 500px;
+    height: 500px;
+    height: auto;
+    margin-left: 0px;
+    display: none;
+  }
+  .registerImg img {
+    animation: register_img 5s infinite;
+  }
+  form {
+    width: 500px;
+    height: 500px;
+    padding: 0 50px;
+  }
+  .center {
+    max-width: 600px;
+  }
+
+  .royhat-h1 {
+    font-size: 28px;
+  }
+
+  .inputName,
+  .select-royhat,
+  .fanButton {
+    font-size: 18px;
+  }
+}
+
+/* Styles for phones */
+@media (max-width: 599px) {
+  .royhat_body {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+    background-color: #fff;
+    flex-direction: column-reverse;
+    grid-template-columns: auto;
+  }
+  .registerImg {
+    width: 370px;
+    height: auto;
+    margin-left: 0px;
+    /* display: none; */
+  }
+  .registerImg img {
+    object-fit: cover;
+    animation: register_img 5s infinite;
+  }
+  form {
+    width: 370px;
+    height: 400px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding: 0 0px;
+  }
+  .center {
+    width: 120%;
     margin: auto;
+    background-color: #f4f4f9;
+  }
+
+  .royhat-h1 {
+    font-size: 20px;
+  }
+
+  .inputName,
+  .select-royhat,
+  .fanButton {
+    font-size: 14px;
+  }
 }
 
-@media screen and (max-width: 520px) {
+/* Styles for desktops */
+@media (min-width: 901px) {
+  .royhat_body {
+    padding: 60px;
+  }
 
-    tr {
-        max-width: 350px;
-    }
+  .center {
+    max-width: 700px;
+  }
 
-    td:last-child {
-        max-width: 350px;
-    }
+  .royhat-h1 {
+    font-size: 32px;
+  }
 
-    .fanButton {
-        width: 300px;
-        height: 50px;
-    }
-    td{
-        padding-left: 20px;
-    }
-    td .inputName {
-        width: 90%;
-        margin: auto;
-    }
-
-    .select-royhat {
-        width: 90%;
-    }
-
+  .inputName,
+  .select-royhat,
+  .fanButton {
+    font-size: 20px;
+  }
 }
+
+@media (max-width: 420px) {
+  .royhat_body {
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 0;
+  }
+  .registerImg {
+    width: 300px;
+    height: auto;
+    margin-left: 0px;
+    /* display: none; */
+  }
+  .registerImg img {
+    object-fit: cover;
+    animation: register_img 5s infinite;
+  }
+  form {
+    width: 370px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0px;
+  }
+  .center {
+    width: 100%;
+    margin: auto;
+    background-color: #f4f4f9;
+  }
+}
+
+
+/* @media (max-width: 375px) {
+  .royhat_body {
+    height: 80vh;
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    padding: 0;
+  }
+  .registerImg {
+    width: 300px;
+    height: auto;
+    margin-left: 0px;
+  }
+  .registerImg img {
+    object-fit: cover;
+    animation: register_img 5s infinite;
+  }
+  form {
+    width: 370px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0px;
+  }
+  .center {
+    width: 100%;
+    margin: auto;
+    background-color: #f4f4f9;
+  }
+} */
