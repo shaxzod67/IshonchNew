@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
   /* background: brown; */
 }
-
 .iframe {
   width: 100%;
   height: 600px;
@@ -44,7 +41,6 @@ header {
   color: black;
   background-color: #fff;
 }
-
 .navbar1 span {
   font-size: 30px;
   color: #ff4500;
@@ -52,7 +48,6 @@ header {
   font-weight: 400;
   font-style: normal;
 }
-
 .navbar1 a {
   display: flex;
   align-items: center;
@@ -61,19 +56,16 @@ header {
   font-size: 18px;
   font-weight: 400;
 }
-
 .navbar1 a svg {
   font-size: 22px;
   margin-right: 10px;
   color: #00b533;
 }
-
 .navbar1 img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-
 .ishonch_h1 {
   color: #000;
   font-size: 65px;
@@ -82,12 +74,11 @@ header {
   font-weight: 400;
   font-style: normal;
 }
-
 .ishonch_h1 span {
   color: #00b533;
 }
 
-.header-content {
+.header {
   width: 100%;
   height: auto;
   display: grid;
@@ -101,14 +92,12 @@ header {
   height: auto;
   border: 1px solid white;
 }
-
 .header_chap button {
   padding: 10px 50px;
   border-radius: 20px;
   color: #fff;
   background: #00b533;
 }
-
 .header_ong {
   width: 100%;
   height: 110%;
@@ -117,7 +106,6 @@ header {
   justify-content: center;
   right: 0;
 }
-
 .header_ong img {
   width: 70%;
   animation: header_img 5s infinite;
@@ -137,7 +125,6 @@ header {
   color: #fff;
   font-weight: 600;
 }
-
 .navUl li a {
   width: 100%;
   height: 30px;
@@ -157,6 +144,7 @@ header {
   justify-content: center;
   line-height: 30px;
   margin-left: 10px;
+  display: none;
   cursor: pointer;
 }
 
@@ -196,6 +184,7 @@ header {
   margin: auto;
   display: grid;
   grid-template-columns: auto auto;
+  margin: auto;
   gap: 10px;
 }
 
@@ -221,21 +210,19 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 .loading {
   position: absolute;
   top: 300px;
   font-size: 40px;
 }
-
 .mediaTel {
   display: none;
 }
-
 .mediaTel a {
   width: 90px;
   padding: 5px 10px;
   border-radius: 22px;
+  display: none;
   border: 1px solid #00b533;
   display: flex;
   align-items: center;
@@ -244,7 +231,6 @@ header {
   font-size: 20px;
   color: #00b533;
 }
-
 .talim {
   width: 90%;
   height: auto;
@@ -271,7 +257,6 @@ header {
   font-weight: 400;
   font-style: normal;
 }
-
 .talimBox {
   width: 100%;
   height: auto;
@@ -283,7 +268,6 @@ header {
   gap: 20px;
   margin-top: 50px;
 }
-
 .jamoaBox {
   width: 100%;
   height: auto;
@@ -295,7 +279,6 @@ header {
   gap: 20px;
   margin-top: 50px;
 }
-
 .talim_box {
   width: 300px;
   height: 500px;
@@ -321,12 +304,10 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .jamoa_box img {
   width: 200px;
   height: auto;
 }
-
 .talim_box h2,
 .jamoa_box h2 {
   font-size: 25px;
@@ -343,7 +324,6 @@ header {
   }
 }
 
-/* Media Queries */
 @media screen and (max-width: 920px) {
   .knopka {
     display: none;
@@ -355,7 +335,7 @@ header {
     display: grid;
   }
 
-  .header-content {
+  .header {
     display: flex;
     flex-wrap: wrap-reverse;
     padding-top: 100px;
@@ -366,22 +346,18 @@ header {
     margin: auto;
     margin-bottom: 20px;
   }
-
   .navbar1 {
     height: 100px;
   }
-
   .header_ong img {
     width: 100%;
     margin: auto;
     overflow: hidden;
     border-radius: 4px;
   }
-
   .ishonch_h1 {
     font-size: 45px;
   }
-
   .ishonch_p {
     font-size: 14px;
   }
@@ -417,19 +393,17 @@ header {
     font-weight: 600;
     transition: 0.5s;
   }
-
   .navbar1 ul li a {
+    /* border: 2px solid #00b533; */
     height: 45px;
     border-radius: 4px;
     background-color: #efefef;
     transition: 0.5s;
   }
-
   .navbar1 ul li a:hover {
     background: #00b533;
     color: #fff;
   }
-
   .navbar1 ul li a:hover svg {
     color: #fff;
   }
@@ -437,7 +411,6 @@ header {
   .mediaTel {
     display: block;
   }
-
   .navbar1 span {
     font-size: 22px;
   }
@@ -445,12 +418,10 @@ header {
   .navbar1 a svg {
     font-size: 18px;
   }
-
   .navbar1 img {
     width: 90px;
     height: 90px;
   }
-
   .talim,
   .jamoa {
     margin-top: 150px;
@@ -461,21 +432,17 @@ header {
   .jamoa h1 {
     font-size: 45px;
   }
-
   .talimBox {
     grid-template-columns: auto;
     justify-content: center;
   }
-
   .jamoaBox {
     grid-template-columns: auto;
     justify-content: center;
   }
-
   .talim_box {
     width: 400px;
   }
-
   .talim_box h2 {
     font-size: 25px;
   }
@@ -492,26 +459,21 @@ header {
     width: 100%;
     height: 80%;
   }
-
   .navUl {
     height: 250px;
   }
-
   .header_chap {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
-
   .header_ong {
     width: 100%;
   }
-
   .header_ong img {
     width: 100%;
   }
-
   .header_chap button {
     padding: 10px 40px;
   }
@@ -520,7 +482,6 @@ header {
     font-size: 30px;
     text-align: start;
   }
-
   .ishonch_p {
     display: none;
   }
@@ -528,20 +489,16 @@ header {
   .navUl {
     height: 200px;
   }
-
   .navbar1 {
     padding: 0 20px 0 0px;
   }
-
   .navbar1 ul li {
     width: 170px;
     height: 40px;
   }
-
   .navbar1 ul li a {
     height: 40px;
   }
-
   .navbar1 span {
     font-size: 22px;
   }
@@ -549,13 +506,11 @@ header {
   .navbar1 a svg {
     font-size: 20px;
   }
-
   .navbar1 img {
     width: 80px;
     height: 80px;
     object-fit: cover;
   }
-
   .logoBox {
     width: 180px;
   }
@@ -565,13 +520,11 @@ header {
     font-size: 18px;
     font-weight: bold;
   }
-
   .talim {
     width: 100%;
     margin-top: 150px;
     padding: 50px 30px;
   }
-
   .talim h1,
   .jamoa h1 {
     font-size: 35px;
