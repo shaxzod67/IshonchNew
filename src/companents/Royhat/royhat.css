@@ -258,34 +258,22 @@ form {
 
 @media (max-width: 380px) {
   .royhat_body {
-    height: 80vh;
     display: grid;
-    justify-content: center;
     grid-template-columns: auto;
-    row-gap: 30px;
-    padding: 0;
+    height: 80vh;
+  
   }
   .registerImg {
-    width: 300px;
-    height: auto;
-    margin-left: 0px;
+    width: 80%;
+    display: block;
+    margin: auto;
   }
   .registerImg img {
-    object-fit: cover;
-    animation: register_img 5s infinite;
+    width: 80%;
+    display: block;
   }
-  form {
-    width: 370px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0px;
-  }
-  .center {
-    width: 100%;
+  form{
+    width: 90%;
     margin: auto;
-    background-color: #f4f4f9;
   }
 }
