@@ -1,6 +1,6 @@
   import { Link } from 'react-router-dom';
   import './royhat.css';
-  import { FaChevronLeft } from 'react-icons/fa';
+  // import { FaChevronLeft } from 'react-icons/fa';
   import { notification } from 'antd';
   import { useState } from 'react';
   import img from "../../img/registerImg.jpg"
